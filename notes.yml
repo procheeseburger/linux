@@ -1,14 +1,14 @@
-Config stuffs
+# General Config:
 
 	Commands:	
 		
-		Change Password
-			passwd
+		Change Password:
+			# passwd
 
-		Set hostname
+		Set hostname:
 			# nano /etc/hostname
 			
-		Set IP
+		Set IP:
 			# nano /etc/netplan/00
 			
 network:
@@ -20,17 +20,15 @@ network:
 	 addresses: [192.168.1.222/24]
 	 gateway4: 192.168.1.1
 	 nameservers:
-	   addresses: [8.8.8.8,8.8.4.4]
+	   addresses: [1.1.1.1]
 
-		Set Timezone
+		Set Timezone:
 			# timedatectl set-timezone America/New_York
 			
 		Set Shell:
-
 			# usermod phenom -m -s /bin/bash -c "admin user"
 			
-		Set priv
-
+		Set priv:
 			# usermod -aG sudo,adm,docker phenom
 	
 
